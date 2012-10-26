@@ -5,6 +5,14 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development, :test do
+	gem 'rspec-rails'
+end
+
+group :test do
+	gem 'capybara'
+end
+
 gem 'pg'
 
 
@@ -22,7 +30,7 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
+# To use ActiveModel has_secure_password	
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
